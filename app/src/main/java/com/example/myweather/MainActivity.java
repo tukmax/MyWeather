@@ -10,5 +10,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        //codigo da api
+        // api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=afeb3f38cdff7769f0f18c09357e5750
     }
 }
