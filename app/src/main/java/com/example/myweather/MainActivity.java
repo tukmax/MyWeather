@@ -13,6 +13,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         //codigo da api
-        // api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=afeb3f38cdff7769f0f18c09357e5750
+        // api.openweathermap.org/data/2.5/weather?q=" + CidadeVar +"&APPID=afeb3f38cdff7769f0f18c09357e5750"
     }
 }
