@@ -27,6 +27,8 @@ public class Home extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        System.out.println(CreateUrl.newurl("london,uk"));
     }
 
 }
