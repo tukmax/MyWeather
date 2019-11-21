@@ -10,8 +10,8 @@ public class WeatherOpenHelper extends SQLiteOpenHelper {
     private static final int DB_VERSION = 1;
     private static final String DB_NAME = "WeatherDB";
 
-
-    public WeatherOpenHelper(Context context) {
+    //private para não ter risco de implementar esse constructor
+    private WeatherOpenHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
     }
 
@@ -24,14 +24,14 @@ public class WeatherOpenHelper extends SQLiteOpenHelper {
         return CONN_INSTANCE;
 
     }
-
+    //precisei mudar o nome da coluna 'temp' para 'temperature' pq tava dando como palavra reservada
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         String sqlquery =
                     "CREATE TABLE IF NOT EXISTS tb_weather (" +
                             "id INTEGER PRIMARY KEY," +
                             "weather TEXT," +
-                            "temp INTEGER" +
+                            "temperature INTEGER" +
                             ")";
         sqLiteDatabase.execSQL(sqlquery);
     }

@@ -20,7 +20,7 @@ public class AddCity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_city);
-
+        //conexão com o banco
         WeatherOpenHelper con_sqlite = WeatherOpenHelper.getInstance(this);
 
         city = (EditText) findViewById(R.id.city);

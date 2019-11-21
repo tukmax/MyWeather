@@ -22,7 +22,7 @@ public class WeatherDAO {
             ContentValues values = new ContentValues();
             values.put("id",weather.getId());
             values.put("weather",weather.getWeather());
-            values.put("temp",weather.getTemp());
+            values.put("temperature",weather.getTemp());
 
             long idCityInserted = db.insert("Weather",null, values);
 
