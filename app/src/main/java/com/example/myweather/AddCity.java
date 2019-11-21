@@ -24,5 +24,15 @@ public class AddCity extends AppCompatActivity {
 
     }
 
+    private String mnturl(){
+        if(city.getText().toString().isEmpty()==false && countrycode.getText().toString().isEmpty() == true){
+           return CreateUrl.newurl(city.getText().toString());
+        }else if(city.getText().toString().isEmpty()==false && countrycode.getText().toString().isEmpty() == false){
+          return CreateUrl.newurl(city.getText().toString() + "," + countrycode.getText().toString());
+        }else {
+           return "null";
+        }
+    }
+
 
 }
