@@ -31,8 +31,8 @@ public class Home extends AppCompatActivity {
             }
         });
 
-        WeatherOpenHelper con_sqlite = WeatherOpenHelper.getInstance(this);
-        System.out.println(CreateUrl.newurl("london,uk"));
+
+        //System.out.println(CreateUrl.newurl("london,uk"));
     }
 
 }

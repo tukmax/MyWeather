@@ -6,6 +6,10 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.myweather.Controller.WeatherCtrl;
+import com.example.myweather.Model.WeatherModel;
+import com.example.myweather.Model.WeatherOpenHelper;
+
 public class AddCity extends AppCompatActivity {
 
     private EditText city;
@@ -17,9 +21,12 @@ public class AddCity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_city);
 
+        WeatherOpenHelper con_sqlite = WeatherOpenHelper.getInstance(this);
+
         city = (EditText) findViewById(R.id.city);
         countrycode = (EditText) findViewById(R.id.countrycode);
         btn_add_city = (Button) findViewById(R.id.btn_add_city);
+
 
 
     }
