@@ -15,7 +15,7 @@
         android:hint="@string/city"
         android:ems="10"
         android:inputType="text"
-        android:text="@string/city" />
+         />
 
     <androidx.legacy.widget.Space
         android:layout_width="wrap_content"
@@ -28,7 +28,7 @@
         android:hint="@string/country_code"
         android:ems="10"
         android:inputType="text"
-        android:text="@string/country_code" />
+         />
 
     <androidx.legacy.widget.Space
         android:layout_width="wrap_content"
