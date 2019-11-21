@@ -3,6 +3,7 @@ package com.example.myweather;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.example.myweather.Model.WeatherOpenHelper;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -30,6 +31,7 @@ public class Home extends AppCompatActivity {
             }
         });
 
+        WeatherOpenHelper con_sqlite = WeatherOpenHelper.getInstance(this);
         System.out.println(CreateUrl.newurl("london,uk"));
     }
 
